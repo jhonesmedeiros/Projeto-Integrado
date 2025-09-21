@@ -1,0 +1,41 @@
+import streamlit as st
+import pandas as pd
+
+st.set_page_config(page_title="Abracadabra Kids", page_icon="🎈")
+
+# Dados fictícios
+recriadores = pd.DataFrame({
+    "Nome": ["João", "Maria", "Carlos"],
+    "Especialidade": ["Pintura Facial", "Contação de Histórias", "Brincadeiras"],
+    "Disponibilidade": ["Sábados", "Domingos", "Finais de Semana"]
+})
+
+atividades = pd.DataFrame({
+    "Atividade": ["Oficina de Slime", "Teatro Infantil", "Caça ao Tesouro"],
+    "Descrição": ["Crianças fazem slime", "Peça teatral divertida", "Jogo em equipe"],
+    "Valor (R$)": [100, 250, 150],
+    "Data": ["2025-10-01", "2025-10-05", "2025-10-10"]
+})
+
+# Título
+st.title("🎪 Abracadabra Kids - Sistema de Recreação")
+
+# Abas
+menu = st.sidebar.radio("Menu", ["Recriadores", "Calendário", "Contato"])
+
+if menu == "Recriadores":
+    st.header("Equipe de Recriadores")
+    st.table(recriadores)
+
+elif menu == "Calendário":
+    st.header("Calendário de Atividades")
+    st.table(atividades)
+
+elif menu == "Contato":
+    st.header("Entre em Contato")
+    nome = st.text_input("Nome")
+    email = st.text_input("Email")
+    telefone = st.text_input("Telefone")
+    mensagem = st.text_area("Mensagem")
+    if st.button("Enviar"):
+        st.success("Mensagem enviada com sucesso! Em breve entraremos em contato.")
