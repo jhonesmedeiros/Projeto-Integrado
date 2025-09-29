@@ -33,11 +33,11 @@ O projeto foi desenvolvido em **Python**, utilizando **Streamlit** para criar um
 ```bash
 git clone https://github.com/SEU_USUARIO/abracadabra-kids.git
 cd abracadabra-kids
-2️⃣ Instalar dependências
+-- Instalar dependências
 bash
 Copiar código
 pip install -r requirements.txt
-3️⃣ Rodar a aplicação
+-- Rodar a aplicação
 bash
 Copiar código
 streamlit run abracadabra.py
