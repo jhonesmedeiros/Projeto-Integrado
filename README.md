@@ -52,7 +52,7 @@ abracadabra-kids/
 │-- requirements.txt     # Dependências do projeto
 │-- README.md            # Documentação do projeto
 👨‍💻 Autores
-Thauan Thales Paulista – RA: 24000757
+Thauan Thales Paulista – RA: 24000758
 
 Gustavo Costa Jorge – RA: 24000679
 
